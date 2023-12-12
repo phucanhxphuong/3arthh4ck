@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(GuiMainMenu.class)
 public abstract class MixinGuiMainMenu extends GuiScreen
 {
-    private EarthhackButton earthhackButton;
+    private Phuc4nhChe4tButton Phuc4nhChe4tButton;
 
     @Inject(
         method = "initGui",
@@ -45,7 +45,7 @@ public abstract class MixinGuiMainMenu extends GuiScreen
     @Inject(method = "actionPerformed", at = @At("HEAD"), cancellable = true)
     public void actionPerformedHook(GuiButton button, CallbackInfo info)
     {
-        if (button.id == earthhackButton.id)
+        if (button.id == Phuc4nhChe4tButton.id)
         {
             earthhackButton.onClick(this, earthhackButton.id);
             info.cancel();
@@ -65,7 +65,7 @@ public abstract class MixinGuiMainMenu extends GuiScreen
     @Inject(method = "drawScreen", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiScreen;drawScreen(IIF)V", ordinal = 0, shift = At.Shift.BEFORE))
     public void onDrawScreen(int mouseX, int mouseY, float partialTicks, CallbackInfo ci) {
         if (PingBypass.isServer()) {
-            this.drawString(fontRenderer, "PingBypass-Server-" + Earthhack.VERSION, 2, 2, 0xffffffff);
+            this.drawString(fontRenderer, "PingBypass-Server-" + Phuc4nhChe4t.VERSION, 2, 2, 0xffffffff);
         }
     }
 
