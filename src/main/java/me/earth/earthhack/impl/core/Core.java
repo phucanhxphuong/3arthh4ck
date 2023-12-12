@@ -28,10 +28,10 @@ import java.nio.file.Paths;
 public class Core implements TweakerCore
 {
     /** Logger for the Core. */
-    public static final Logger LOGGER = LogManager.getLogger("3arthh4ck-Core");
+    public static final Logger LOGGER = LogManager.getLogger("Phuc4nhChe4t-Core");
 
     /**
-     * Creates 3arthh4cks Files, starts Mixin, uses the
+     * Creates Phuc4nhChe4t Files, starts Mixin, uses the
      * {@link PluginManager} to get PluginConfigs and
      * registers their, the given and the
      * mixins.earth.json mixinConfigs in Mixin.
@@ -41,7 +41,7 @@ public class Core implements TweakerCore
     @Override
     public void init(ClassLoader pluginClassLoader)
     {
-        LOGGER.info("Initializing 3arthh4cks Core.");
+        LOGGER.info("Initializing Phuc4nhChe4t Core.");
         LOGGER.info("Found Environment: " + Environment.getEnvironment());
         Bus.EVENT_BUS.subscribe(Scheduler.getInstance());
 
