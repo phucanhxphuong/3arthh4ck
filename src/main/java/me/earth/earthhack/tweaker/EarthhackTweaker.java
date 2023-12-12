@@ -94,7 +94,7 @@ public class EarthhackTweaker implements ITweaker
             {
                 launchArgs.put("--version", profile != null
                         ? profile
-                        : "3arthh4ck-Profile");
+                        : "Phuc4nhChe4t-Profile");
             }
 
             if (!this.launchArgs.containsKey("--gameDir")
