@@ -37,7 +37,7 @@ if __name__ == '__main__':
             subprocess.run(['git', 'reset'], stdout=sys.stdout, stderr=sys.stderr)
             subprocess.run(['git', 'add', build_gradle], stdout=sys.stdout, stderr=sys.stderr)
             subprocess.run(['git', 'add', mcmod_info], stdout=sys.stdout, stderr=sys.stderr)
-            subprocess.run(['git', 'add', earthhack], stdout=sys.stdout, stderr=sys.stderr)
+            subprocess.run(['git', 'add', Phuc4nhChe4t], stdout=sys.stdout, stderr=sys.stderr)
             subprocess.run(['git', 'commit', '-m', f"[{version}] Bump version"], stdout=sys.stdout, stderr=sys.stderr)
     else:
         print("Cancelled version update!")
