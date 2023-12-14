@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(GuiMainMenu.class)
 public abstract class MixinGuiMainMenu extends GuiScreen
 {
-    private 3arthh4ckButton 3arthh4ckButton;
+    private earthhackButton earthhackButton;
 
     @Inject(
         method = "initGui",
@@ -45,7 +45,7 @@ public abstract class MixinGuiMainMenu extends GuiScreen
     @Inject(method = "actionPerformed", at = @At("HEAD"), cancellable = true)
     public void actionPerformedHook(GuiButton button, CallbackInfo info)
     {
-        if (button.id == Phuc4nhChe4tButton.id)
+        if (button.id == earthhackButton.id)
         {
             earthhackButton.onClick(this, earthhackButton.id);
             info.cancel();
