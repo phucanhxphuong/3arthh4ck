@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(GuiMainMenu.class)
 public abstract class MixinGuiMainMenu extends GuiScreen
 {
-    private earthhackButton earthhackButton;
+    private 3arthhackButton 3arthhackButton;
 
     @Inject(
         method = "initGui",
